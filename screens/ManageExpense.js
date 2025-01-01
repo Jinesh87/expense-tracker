@@ -1,9 +1,17 @@
-import { View,Text } from "react-native";
+import { useLayoutEffect} from "react";
+import { View, Text } from "react-native";
 
-function ManageExpense(){
+function ManageExpense({ route, navigation }) {
+    const editedExpenseId = route.params?.expenseId;
+    const isEditing = !!editedExpenseId;
+    useLayoutEffect(() => {
+        navigation.setOptions({
+            title: isEditing ? 'Edit Expense' : 'Add Expense',
+        });
+    }, [navigation, isEditing]);
     return (
         <View>
-            <Text>Manage Expense</Text>
+            <Text>Manage Expense {editedExpenseId}</Text>
         </View>
     );
 }
