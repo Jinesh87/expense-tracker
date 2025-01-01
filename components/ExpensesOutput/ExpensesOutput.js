@@ -34,6 +34,30 @@ const DUMMY_EXPENSES = [
         description: 'Another book',
         amount: 18.59,
         date: new Date('2024-02-18')
+    },
+    {
+        id: 'e6',
+        description: 'A book',
+        amount: 14.99,
+        date: new Date('2024-02-19')
+    },
+    {
+        id: 'e7',
+        description: 'Another book',
+        amount: 18.59,
+        date: new Date('2024-02-18')
+    },
+    {
+        id: 'e8',
+        description: 'A book',
+        amount: 14.99,
+        date: new Date('2024-02-19')
+    },
+    {
+        id: 'e9',
+        description: 'Another book',
+        amount: 18.59,
+        date: new Date('2024-02-18')
     }
 ];
 function ExpensesOutput({ expenses, expensesPeriod }) {
